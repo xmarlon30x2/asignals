@@ -1,15 +1,31 @@
+
 [project]
 name = "asignals"
 version = "1.0.2"
 description = "Async signals implementation for Python with type-safe callbacks"
-readme = "README.md"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.13"
+license = { file = "LICENCE" }
 authors = [
     { name = "xmarlon30x2", email = "xmarlon360x2@gmail.com" }
 ]
-license = { file = "LICENCE" }
-requires-python = ">=3.13"
 dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/xmarlon30x2/asignals"
+Repository = "https://github.com/xmarlon30x2/asignals"
 
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
