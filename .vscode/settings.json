@@ -1,0 +1,34 @@
+{
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "editor.formatOnSave": "explicit",
+      "source.unusedImports": "explicit",
+      "source.organizeImports": "explicit",
+    },
+},
+"[json]": {
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.suggest.insertMode": "replace"
+},
+"ruff.lineLength": 85,
+"ruff.lint.select": [
+  "C",
+  "E",
+  "F",
+  "W"
+],
+"python.testing.unittestArgs": [
+  "-v",
+  "-s",
+  "./tests",
+  "-p",
+  "test_*.py"
+],
+"python.testing.pytestEnabled": false,
+"python.testing.unittestEnabled": true
+
+}
